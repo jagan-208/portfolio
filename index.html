@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaganaath A — AI / ML Engineer</title>
+    <meta name="description" content="Portfolio of Jaganaath A — AI/ML Engineer specializing in LLMs, RAG, Multi-Agent Systems, and Cloud Platforms. Building intelligent systems at scale.">
+    <meta name="keywords" content="AI Engineer, ML Engineer, LLM, RAG, LangChain, Portfolio, Jaganaath">
+    <meta name="author" content="Jaganaath A">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particles Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>JA<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link" data-index="0">About</a>
+                <a href="#skills" class="nav-link" data-index="1">Skills</a>
+                <a href="#experience" class="nav-link" data-index="2">Experience</a>
+                <a href="#projects" class="nav-link" data-index="3">Projects</a>
+                <a href="#certifications" class="nav-link" data-index="4">Certifications</a>
+                <a href="#contact" class="nav-link" data-index="5">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title animate-in">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">
+                    <span class="name-text">Jaganaath A</span>
+                    <span class="name-underline"></span>
+                </span>
+            </h1>
+            <div class="hero-role animate-in">
+                <span class="role-text" id="typedText"></span>
+                <span class="role-cursor">|</span>
+            </div>
+            <p class="hero-description animate-in">
+                Building intelligent systems that transform how businesses operate — from 
+                <span class="highlight">LLM-powered agents</span> to 
+                <span class="highlight">scalable ML pipelines</span> processing millions of data points.
+            </p>
+            <div class="hero-actions animate-in">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Major Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span><span class="stat-suffix">K+</span>
+                    <span class="stat-label">Data Points Processed</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 — About</span>
+                <h2 class="section-title">Crafting Intelligence,<br><span class="gradient-text">One Model at a Time</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm an <strong>AI/ML Engineer at Tata Consultancy Services (TCS)</strong>, where I architect and deploy intelligent systems for one of the world's largest retailers — <strong>Walmart</strong>.
+                    </p>
+                    <p class="about-text">
+                        My expertise spans the full AI stack — from building <strong>multi-agent LangGraph frameworks</strong> that cut ticket resolution times by 50%, to engineering <strong>OCR pipelines</strong> processing 500K+ product images, to developing <strong>Text-to-SQL engines</strong> achieving 80%+ accuracy across complex schemas.
+                    </p>
+                    <p class="about-text">
+                        I'm passionate about turning cutting-edge AI research into production-grade systems that deliver measurable business impact. Whether it's reducing operational costs by 50% or automating 70% of support interactions, I focus on solutions that scale.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <span>Full-Stack AI</span>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <span>Production-Grade</span>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                            <span>Impact-Driven</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">profile.py</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">AIEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Jaganaath A"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"AI/ML Engineer"</span>
+        <span class="code-param">self</span>.company = <span class="code-string">"TCS"</span>
+        <span class="code-param">self</span>.passion = [
+            <span class="code-string">"LLMs"</span>,
+            <span class="code-string">"Multi-Agent Systems"</span>,
+            <span class="code-string">"RAG Pipelines"</span>,
+            <span class="code-string">"ML at Scale"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">build</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Intelligent Systems"</span>
+        
+    <span class="code-keyword">def</span> <span class="code-func">impact</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Measurable Results"</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 — Skills</span>
+                <h2 class="section-title">Technology <span class="gradient-text">Arsenal</span></h2>
+                <p class="section-subtitle">Tools and technologies I use to build intelligent systems</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-delay="0">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                        </div>
+                        <h3>AI / ML Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">AI Agents</span>
+                        <span class="skill-tag">MCP</span>
+                        <span class="skill-tag">Multi-Agent Systems</span>
+                        <span class="skill-tag">Supervised Learning</span>
+                        <span class="skill-tag">OCR</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">SLM</span>
+                        <span class="skill-tag">Embeddings</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Languages & Data</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        </div>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Google Cloud (GCP)</span>
+                        <span class="skill-tag">Microsoft Azure</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-delay="300">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Vector Databases</span>
+                        <span class="skill-tag">ChromaDB</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-delay="400">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Tools & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Chainlit</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 — Experience</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+            </div>
+            <div class="experience-container">
+                <div class="experience-header-card">
+                    <div class="company-info">
+                        <div class="company-logo">TCS</div>
+                        <div>
+                            <h3 class="company-name">Tata Consultancy Services</h3>
+                            <span class="company-role">AI Engineer</span>
+                        </div>
+                    </div>
+                    <div class="company-meta">
+                        <span class="company-duration">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            Nov 2024 — Present
+                        </span>
+                        <span class="company-client">Client: Walmart</span>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Project 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-tag">Current Project</div>
+                                    <h4 class="project-title">Tax Modernization</h4>
+                                    <p class="project-subtitle">Large-scale ML pipeline for product classification & catalog enrichment</p>
+                                </div>
+                                <div class="project-achievements">
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">500K+</span> product images processed through OCR pipeline
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">50%</span> reduction in operational costs via LLM-as-a-judge validation
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">10x</span> faster categorization — from 10 days down to 1 day
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-tech-stack">
+                                    <span class="tech-chip">OCR</span>
+                                    <span class="tech-chip">GCP</span>
+                                    <span class="tech-chip">LLM</span>
+                                    <span class="tech-chip">Supervised ML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-tag">AI Chatbot</div>
+                                    <h4 class="project-title">Ops Buddy</h4>
+                                    <p class="project-subtitle">NLP-driven multi-agent incident resolution chatbot</p>
+                                </div>
+                                <div class="project-achievements">
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">70%</span> of employee interactions automated
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">95%</span> response accuracy with RAG pipeline
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">50%</span> reduction in P95 ticket resolution time
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">1,000+</span> technical documents in RAG knowledge base
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-tech-stack">
+                                    <span class="tech-chip">LangGraph</span>
+                                    <span class="tech-chip">RAG</span>
+                                    <span class="tech-chip">NLP</span>
+                                    <span class="tech-chip">Vector DB</span>
+                                    <span class="tech-chip">Multi-Agent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-tag">GenAI</div>
+                                    <h4 class="project-title">Platform Insights Bot</h4>
+                                    <p class="project-subtitle">GenAI-powered NL2SQL assistant for real-time business analytics</p>
+                                </div>
+                                <div class="project-achievements">
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">80%+</span> accuracy across 10+ complex schemas
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            <span class="achievement-metric">70%</span> reduction in analysis time
+                                        </div>
+                                    </div>
+                                    <div class="achievement">
+                                        <div class="achievement-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div class="achievement-content">
+                                            Query turnaround from <span class="achievement-metric">hours → 2 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-tech-stack">
+                                    <span class="tech-chip">NL2SQL</span>
+                                    <span class="tech-chip">GenAI</span>
+                                    <span class="tech-chip">NLG</span>
+                                    <span class="tech-chip">Data Viz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Impact Section -->
+    <section class="section section-dark" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 — Impact</span>
+                <h2 class="section-title">Measurable <span class="gradient-text">Results</span></h2>
+                <p class="section-subtitle">Key metrics that demonstrate the business impact of my work</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number">
+                        <span class="impact-value" data-count="500">0</span><span class="impact-suffix">K+</span>
+                    </div>
+                    <div class="impact-bar">
+                        <div class="impact-bar-fill" style="--fill-width: 95%"></div>
+                    </div>
+                    <h4 class="impact-title">Images Processed</h4>
+                    <p class="impact-desc">Product images processed through OCR pipeline for catalog enrichment</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">
+                        <span class="impact-value" data-count="70">0</span><span class="impact-suffix">%</span>
+                    </div>
+                    <div class="impact-bar">
+                        <div class="impact-bar-fill" style="--fill-width: 70%"></div>
+                    </div>
+                    <h4 class="impact-title">Interactions Automated</h4>
+                    <p class="impact-desc">Employee interactions automated via NLP-driven chatbot</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">
+                        <span class="impact-value" data-count="50">0</span><span class="impact-suffix">%</span>
+                    </div>
+                    <div class="impact-bar">
+                        <div class="impact-bar-fill" style="--fill-width: 50%"></div>
+                    </div>
+                    <h4 class="impact-title">Cost Reduction</h4>
+                    <p class="impact-desc">Operational costs reduced through LLM-as-a-judge validation framework</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">
+                        <span class="impact-value" data-count="95">0</span><span class="impact-suffix">%</span>
+                    </div>
+                    <div class="impact-bar">
+                        <div class="impact-bar-fill" style="--fill-width: 95%"></div>
+                    </div>
+                    <h4 class="impact-title">RAG Accuracy</h4>
+                    <p class="impact-desc">Response accuracy for knowledge-based inquiries via vector database</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">
+                        <span class="impact-value" data-count="10">0</span><span class="impact-suffix">x</span>
+                    </div>
+                    <div class="impact-bar">
+                        <div class="impact-bar-fill" style="--fill-width: 88%"></div>
+                    </div>
+                    <h4 class="impact-title">Faster Classification</h4>
+                    <p class="impact-desc">Product categorization accelerated from 10 days to just 1 day</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">
+                        <span class="impact-value" data-count="80">0</span><span class="impact-suffix">%+</span>
+                    </div>
+                    <div class="impact-bar">
+                        <div class="impact-bar-fill" style="--fill-width: 80%"></div>
+                    </div>
+                    <h4 class="impact-title">NL2SQL Accuracy</h4>
+                    <p class="impact-desc">Text-to-SQL accuracy across 10+ complex database schemas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 — Certifications</span>
+                <h2 class="section-title">Cloud <span class="gradient-text">Credentials</span></h2>
+            </div>
+            <div class="cert-grid">
+                <a href="https://www.credly.com/badges/0f9c839b-a0a5-4b4d-958d-ec0ac5afe579" target="_blank" rel="noopener noreferrer" class="cert-card">
+                    <div class="cert-badge aws">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    </div>
+                    <h4 class="cert-title">AWS Certified AI Practitioner</h4>
+                    <span class="cert-issuer">Amazon Web Services</span>
+                    <span class="cert-verify">Verify →</span>
+                    <div class="cert-glow"></div>
+                </a>
+                <a href="https://www.credly.com/badges/63d80cdd-9a4a-40cf-b23b-d2f6100bcf6b/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-card">
+                    <div class="cert-badge aws">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    </div>
+                    <h4 class="cert-title">AWS Certified Cloud Practitioner</h4>
+                    <span class="cert-issuer">Amazon Web Services</span>
+                    <span class="cert-verify">Verify →</span>
+                    <div class="cert-glow"></div>
+                </a>
+                <a href="https://www.credly.com/badges/4363dec9-b8ed-48cf-b54a-bdc3db439322" target="_blank" rel="noopener noreferrer" class="cert-card">
+                    <div class="cert-badge aws">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    </div>
+                    <h4 class="cert-title">AWS Certified ML Engineer — Associate</h4>
+                    <span class="cert-issuer">Amazon Web Services</span>
+                    <span class="cert-verify">Verify →</span>
+                    <div class="cert-glow"></div>
+                </a>
+                <a href="https://learn.microsoft.com/en-us/users/jaganaatha-1982/credentials/f2682176a84d689d" target="_blank" rel="noopener noreferrer" class="cert-card">
+                    <div class="cert-badge azure">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+                    </div>
+                    <h4 class="cert-title">Microsoft Azure AI Fundamentals</h4>
+                    <span class="cert-issuer">Microsoft</span>
+                    <span class="cert-verify">Verify →</span>
+                    <div class="cert-glow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-dark" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06 — Education</span>
+                <h2 class="section-title">Academic <span class="gradient-text">Foundation</span></h2>
+            </div>
+            <div class="edu-card">
+                <div class="edu-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+                </div>
+                <div class="edu-content">
+                    <h3 class="edu-degree">B.E. in Computer Science and Engineering</h3>
+                    <p class="edu-school">Sri Sai Ram Institute of Technology</p>
+                    <div class="edu-meta">
+                        <span class="edu-duration">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            Nov 2020 — Apr 2024
+                        </span>
+                        <span class="edu-gpa">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            CGPA: 8.4
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">07 — Contact</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
+                <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:Jaganaath208@gmail.com" class="contact-card" id="contactEmail">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                    </div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">Jaganaath208@gmail.com</span>
+                    <div class="contact-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+                <a href="tel:+919442059246" class="contact-card" id="contactPhone">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+91 9442059246</span>
+                    <div class="contact-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+                <a href="https://github.com/jagan-208" target="_blank" rel="noopener noreferrer" class="contact-card" id="contactGithub">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">jagan-208</span>
+                    <div class="contact-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/jaganaath-a-16b3b4237/" target="_blank" rel="noopener noreferrer" class="contact-card" id="contactLinkedin">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">Jaganaath A</span>
+                    <div class="contact-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>JA<span class="logo-bracket">/&gt;</span>
+                </span>
+                <p class="footer-text">Designed & Built by Jaganaath A</p>
+                <p class="footer-copyright">© 2026 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
