@@ -29,7 +29,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ——— Smooth Scroll ———
     initSmoothScroll();
+
+    // ——— Theme Toggle (Light/Dark) ———
+    initThemeToggle();
+
+    // ——— Resume Download ———
+    // Handled natively by the HTML download attribute — no JS needed
 });
+
+/* ============================================
+   THEME TOGGLE (LIGHT / DARK MODE)
+   ============================================ */
+function initThemeToggle() {
+    const toggle = document.getElementById('themeToggle');
+    if (!toggle) return;
+
+    const html = document.documentElement;
+
+    // Check for saved preference or system preference
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme) {
+        html.setAttribute('data-theme', savedTheme);
+    } else {
+        // Default to dark (the site is designed dark-first)
+        html.setAttribute('data-theme', 'dark');
+    }
+
+    // Add smooth transition to body after initial load to avoid flash
+    setTimeout(() => {
+        html.style.transition = 'background-color 0.4s ease, color 0.4s ease';
+    }, 100);
+
+    toggle.addEventListener('click', () => {
+        const current = html.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('portfolio-theme', next);
+
+        // Trigger a subtle rotate animation on the button
+        toggle.style.transform = 'scale(0.9) rotate(15deg)';
+        setTimeout(() => {
+            toggle.style.transform = '';
+        }, 200);
+    });
+}
 
 /* ============================================
    PARTICLE SYSTEM
@@ -254,7 +298,7 @@ function initTypingEffect() {
 function initScrollAnimations() {
     // Observe sections, cards, etc.
     const observeTargets = document.querySelectorAll(
-        '.section-header, .skill-category, .project-card, .impact-card, .cert-card, .contact-card, .edu-card, .about-content, .about-visual, .experience-header-card, .highlight-card'
+        '.section-header, .skill-category, .project-card, .impact-card, .cert-card, .contact-card, .edu-card, .about-content, .about-visual, .experience-header-card, .highlight-card, .featured-project-card'
     );
 
     const observer = new IntersectionObserver((entries) => {
